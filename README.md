@@ -12,6 +12,7 @@ c. Columns should be arranged in a manner that the same biological duplication i
 2. -g group information
 a. Table with information of the number of samples in each group.
 b. Should be ordered using the same manner as the column names of the expression matrix. 
+c. An example.
 
 
 | Group | Number of Samples |
