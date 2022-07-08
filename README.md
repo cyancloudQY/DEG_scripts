@@ -38,4 +38,18 @@ c. An example.
 3. intersection_gene_list: Genes that are identified by all three software.
 4. Venn_up, Venn_down: Venn diagram of the three softwares.  
 
+# GO_KEGG
+**Uses the clusterProfiler package to run GO and KEGG analysis**
+
+## Input
+1. Gene list. Each line contains one gene. (ENSG).
+2. No header
+
+## Output
+1. Kegg, GO results will be output to a tsv file.
+2. Will output the barplot and dotplot of the top 10 gene sets.
+
+
+
+
 
