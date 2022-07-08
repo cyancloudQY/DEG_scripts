@@ -32,3 +32,10 @@ c. An example.
 
 5. *-p* threshold of p-value.
 
+## Output
+1. CPM_exp : Expression matrix after CPM normalization. 
+2. DESeq_diff, DESeq_results, edgeR_diff, edgeR_results, limma_diff, limma_results : results file contains the full output of three DEG software, diff file contains the genes that only pass the given threshold.
+3. intersection_gene_list: Genes that are identified by all three software.
+4. Venn_up, Venn_down: Venn diagram of the three softwares.  
+
+
