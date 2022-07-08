@@ -16,6 +16,6 @@ c. An example.
 
 
 | Group | Number of Samples |
-| --- | ----------- |
+| --- | :-----------: |
 | R | 10|
 | S | 9 |
