@@ -41,19 +41,17 @@ heat_map <- function(exp){
 # 2. group_info should be factor list. 
 # eg: group_info <- factor(c(rep("R",10), rep('S',9)))
 library(FactoMineR)
-PCA_exp <- function(exp, group_info){
-	pca_data <- t(exp)
-	gene.pca <- PCA(pca_data, ncp = 2, scale.unit = TRUE, graph = FALSE)
-	pca_sample <- data.frame(gene.pca$ind$coord)
-	group_df <- as.data.frame(group_info)
-	pca_sample <- cbind(pca_sample, group_df)
-	write.table(pca_sample, './pca_info.txt', quote = FALSE)
-
-	pdf('PCA.pdf')
-	plot(gene.pca)
-	dev.off()
-
-}
+> PCA_exp <- function(exp, group_info){
++     pca_data <- t(exp)
++     gene.pca <- PCA(pca_data, ncp = 2, scale.unit = TRUE, graph = FALSE)
++     pca_sample <- data.frame(gene.pca$ind$coord)
++     group_df <- as.data.frame(group_info)
++     pca_sample <- cbind(pca_sample, group_df)
++     write.table(pca_sample, './pca_info.txt', quote = FALSE)
++     
++     PCA_g <- plot(gene.pca)
++     return(PCA_g)
++ }
 
 
 
