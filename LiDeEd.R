@@ -112,7 +112,7 @@ limma_object <- calcNormFactors(limma_object)
 limma_object <- voom(limma_object,design_limma)
 
 fit <- lmFit(limma_object,design_limma)
-fit <- eBayes(fit, trend = TRUE)
+fit <- eBayes(fit)
 limma_results <- topTable(fit, n = Inf)
 
 limma_results$type <- ifelse((limma_results$logFC > fold_change) & (limma_results$P.Value < p_value),'UP',
